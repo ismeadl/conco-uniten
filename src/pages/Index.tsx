@@ -25,7 +25,7 @@ const Index = () => {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
 useEffect(() => {
-  const targetDate = new Date("2025-10-20T00:00:00+08:00"); // Malaysia time
+  const targetDate = new Date("2025-10-31T00:00:00+08:00"); // Malaysia time
 
   const timer = setInterval(() => {
     const now = new Date();
@@ -81,8 +81,8 @@ useEffect(() => {
   // Time-based slot countdown (auto-calculate every 1 min)
 useEffect(() => {
   const calculateSlotsLeft = () => {
-    const targetTime = new Date("2025-10-25T23:59:59+08:00").getTime();
-    const startTime = new Date("2025-10-02T00:00:00+08:00").getTime(); // <-- adjust this to your actual start date
+    const targetTime = new Date("2025-10-31T23:59:59+08:00").getTime();
+    const startTime = new Date("2025-10-15T00:00:00+08:00").getTime(); // <-- adjust this to your actual start date
     const now = new Date().getTime();
 
     // 🚩 Add this guard so it doesn't drop before 2 Oct
@@ -166,10 +166,10 @@ useEffect(() => {
           {/* Hero Content */}
           <div className="text-center space-y-2 mb-6">
   <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-     Majlis Idul Ilmi Konvokesyen UniSZA Ke-17
+     Majlis Pemasyhuran dan Konvokesyen Kali Ke-27 UNITEN
   </h1>
   <p className="text-lg text-muted-foreground font-medium">
-    📍 Dewan Al-Muktafi Billah Shah (2–6 November 2025)
+    📍 Dewan Seri Sarjana, Kampus Putrajaya (1–2 November 2025)
   </p>
   <p className="text-sm text-destructive font-semibold">
     🎟️ Limited slots – only early bookers gets guaranteed spot!
