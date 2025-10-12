@@ -333,7 +333,7 @@ useEffect(() => {
       className="w-full bg-white text-black border hover:bg-muted"
       variant="outline"
       onClick={() => {
-        window.open("https://catalog.billplz.com/vision360/payment-form/unisza-2025", "_blank");
+        window.open("https://catalog.billplz.com/vision360/pf/single-convo-2025", "_blank");
       }}
     >
       Single Package (RM20)
@@ -342,7 +342,7 @@ useEffect(() => {
     <Button
       className="w-full bg-primary text-white hover:bg-primary/90"
       onClick={() => {
-        window.open("https://catalog.billplz.com/vision360/payment-form/unisza-2025-cd", "_blank");
+        window.open("https://catalog.billplz.com/vision360/pf/combo-convo-2025", "_blank");
       }}
     >
       Combo Deal 🔥 (RM30) 
