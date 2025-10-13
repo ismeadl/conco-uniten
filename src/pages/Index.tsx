@@ -407,7 +407,7 @@ useEffect(() => {
     </div>
     <div className="flex items-center gap-2">
       <Button 
-        onClick={() => window.open('https://wa.link/y199a1')}
+        onClick={() => window.open('https://wa.link/pzhxaj')}
         className="bg-green-600 hover:bg-green-700 text-white"
         size="icon"
       >
