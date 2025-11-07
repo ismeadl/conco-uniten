@@ -25,7 +25,7 @@ const Index = () => {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
 useEffect(() => {
-  const targetDate = new Date("2025-10-31T00:00:00+08:00"); // Malaysia time
+  const targetDate = new Date("2025-11-29T00:00:00+08:00"); // Malaysia time
 
   const timer = setInterval(() => {
     const now = new Date();
@@ -81,11 +81,11 @@ useEffect(() => {
   // Time-based slot countdown (auto-calculate every 1 min)
 useEffect(() => {
   const calculateSlotsLeft = () => {
-    const targetTime = new Date("2025-10-31T23:59:59+08:00").getTime();
-    const startTime = new Date("2025-10-15T00:00:00+08:00").getTime(); // <-- adjust this to your actual start date
+    const targetTime = new Date("2025-11-28T23:59:59+08:00").getTime();
+    const startTime = new Date("2025-11-08T00:00:00+08:00").getTime(); // <-- adjust this to your actual start date
     const now = new Date().getTime();
 
-    // 🚩 Add this guard so it doesn't drop before 2 Oct
+    // 🚩 Add this guard so it doesn't drop before 8 Oct
     if (now < startTime) {
       setSlotsLeft(200); // initial slots
       return;
@@ -166,10 +166,10 @@ useEffect(() => {
           {/* Hero Content */}
           <div className="text-center space-y-2 mb-6">
   <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-     Majlis Pemasyhuran dan Konvokesyen Kali Ke-27 UNITEN
+     Istiadat Konvokesyen Universiti Malaya Kali Ke-65
   </h1>
   <p className="text-lg text-muted-foreground font-medium">
-    📍 Dewan Seri Sarjana, Kampus Putrajaya (1–2 November 2025)
+    📍 Dewan Tunku Canselor, UM 28-Nov – 10-Dec 2025)
   </p>
   <p className="text-sm text-destructive font-semibold">
     🎟️ Limited slots – only early bookers gets guaranteed spot!
@@ -333,7 +333,7 @@ useEffect(() => {
       className="w-full bg-white text-black border hover:bg-muted"
       variant="outline"
       onClick={() => {
-        window.open("https://catalog.billplz.com/vision360/pf/single-convo-2025", "_blank");
+        window.open("https://catalog.billplz.com/vision360/pf/um-single", "_blank");
       }}
     >
       Single Package (RM20)
@@ -342,7 +342,7 @@ useEffect(() => {
     <Button
       className="w-full bg-primary text-white hover:bg-primary/90"
       onClick={() => {
-        window.open("https://catalog.billplz.com/vision360/pf/combo-convo-2025", "_blank");
+        window.open("https://catalog.billplz.com/vision360/pf/um-combo", "_blank");
       }}
     >
       Combo Deal 🔥 (RM30) 
