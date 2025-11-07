@@ -169,7 +169,7 @@ useEffect(() => {
      Istiadat Konvokesyen Universiti Malaya Kali Ke-65
   </h1>
   <p className="text-lg text-muted-foreground font-medium">
-    📍 Dewan Tunku Canselor, UM 28-Nov – 10-Dec 2025)
+    📍 Dewan Tunku Canselor, UM (29-Nov – 10-Dec 2025)
   </p>
   <p className="text-sm text-destructive font-semibold">
     🎟️ Limited slots – only early bookers gets guaranteed spot!
