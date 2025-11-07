@@ -47,7 +47,7 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 }, []);
-  const [slotsLeft, setSlotsLeft] = useState(200);
+  const [slotsLeft, setSlotsLeft] = useState(300);
   const [selectedPackage, setSelectedPackage] = useState('combo');
   const [totalPrice, setTotalPrice] = useState(30);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -87,14 +87,14 @@ useEffect(() => {
 
     // 🚩 Add this guard so it doesn't drop before 8 Oct
     if (now < startTime) {
-      setSlotsLeft(200); // initial slots
+      setSlotsLeft(300); // initial slots
       return;
     }
 
     const totalDuration = targetTime - startTime;
     const elapsed = now - startTime;
 
-    const totalSlots = 200;
+    const totalSlots = 300;
     const slotsLeft = Math.max(
       Math.ceil(totalSlots * (1 - elapsed / totalDuration)),
       0
