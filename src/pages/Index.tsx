@@ -400,27 +400,34 @@ useEffect(() => {
       </footer>
 
       {/* Sticky Bottom Bar */}
-<div className="fixed bottom-0 left-0 right-0 bg-background border-t p-4 z-50">
-  <div className="flex items-center justify-between max-w-4xl mx-auto gap-3">
-    <div className="text-sm">
-      <span className="font-bold text-primary">{slotsLeft}</span> slots left
-    </div>
-    <div className="flex items-center gap-2">
-      <Button 
-        onClick={() => window.open('https://wa.link/pzhxaj')}
-        className="bg-green-600 hover:bg-green-700 text-white"
-        size="icon"
-      >
-        <MessageCircle className="h-5 w-5" />
-      </Button>
-      <Button 
-        onClick={() => setIsBookingOpen(true)}
-        className="bg-primary hover:bg-primary/90 text-primary-foreground"
-      >
-        Book Now
-      </Button>
-    </div>
-  </div>
+<div className="flex items-center gap-2">
+  {/* WhatsApp button */}
+  <Button 
+    onClick={() => window.open('https://wa.link/pzhxaj')}
+    className="bg-green-600 hover:bg-green-700 text-white"
+    size="icon"
+  >
+    <MessageCircle className="h-5 w-5" />
+  </Button>
+
+  {/* View Album button */}
+  <Button
+    onClick={() => {
+      window.open("https://catalog.billplz.com/vision360/pf/um-album1", "_blank");
+      window.open("https://catalog.billplz.com/vision360/pf/um-album2", "_blank");
+    }}
+    className="bg-yellow-500 hover:bg-yellow-600 text-white"
+  >
+    View Album
+  </Button>
+
+  {/* Book Now button */}
+  <Button 
+    onClick={() => setIsBookingOpen(true)}
+    className="bg-primary hover:bg-primary/90 text-primary-foreground"
+  >
+    Book Now
+  </Button>
 </div>
     </div>
   );
