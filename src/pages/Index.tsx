@@ -51,6 +51,7 @@ useEffect(() => {
   const [selectedPackage, setSelectedPackage] = useState('combo');
   const [totalPrice, setTotalPrice] = useState(30);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isAlbumOpen, setIsAlbumOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -350,6 +351,39 @@ useEffect(() => {
   </div>
 </DialogContent>
       </Dialog>
+      {/* Album Modal */}
+<Dialog open={isAlbumOpen} onOpenChange={setIsAlbumOpen}>
+  <DialogContent className="sm:max-w-[400px]">
+    <DialogHeader>
+      <DialogTitle>View Convocation Albums</DialogTitle>
+      <DialogDescription>
+        Choose an album to view your convocation photos.
+      </DialogDescription>
+    </DialogHeader>
+
+    <div className="grid gap-4 py-4">
+      <Button
+        className="w-full bg-white text-black border hover:bg-muted"
+        variant="outline"
+        onClick={() => {
+          window.open("https://fotoshare.co/e/AuYUjxylQo0-ce5ur7xVV", "_blank");
+        }}
+      >
+        📸 Polaroid (softcopies)
+      </Button>
+
+      <Button
+        className="w-full bg-yellow-500 text-white hover:bg-yellow-600"
+        onClick={() => {
+          window.open("https://fotoshare.co/e/hDi6G0sJWm400Xqrw1ZxT", "_blank");
+        }}
+      >
+        📷 360 Video
+      </Button>
+    </div>
+  </DialogContent>
+</Dialog>
+
 
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-muted/30">
@@ -406,20 +440,32 @@ useEffect(() => {
       <span className="font-bold text-primary">{slotsLeft}</span> slots left
     </div>
     <div className="flex items-center gap-2">
-      <Button 
-        onClick={() => window.open('https://wa.link/pzhxaj')}
-        className="bg-green-600 hover:bg-green-700 text-white"
-        size="icon"
-      >
-        <MessageCircle className="h-5 w-5" />
-      </Button>
-      <Button 
-        onClick={() => setIsBookingOpen(true)}
-        className="bg-primary hover:bg-primary/90 text-primary-foreground"
-      >
-        Book Now
-      </Button>
-    </div>
+  {/* WhatsApp button */}
+  <Button 
+    onClick={() => window.open('https://wa.link/pzhxaj')}
+    className="bg-green-600 hover:bg-green-700 text-white"
+    size="icon"
+  >
+    <MessageCircle className="h-5 w-5" />
+  </Button>
+
+  {/* View Album button */}
+  <Button 
+    onClick={() => setIsAlbumOpen(true)}
+    className="bg-yellow-500 hover:bg-yellow-600 text-white"
+  >
+    View Album
+  </Button>
+
+  {/* Book Now button */}
+  <Button 
+    onClick={() => setIsBookingOpen(true)}
+    className="bg-primary hover:bg-primary/90 text-primary-foreground"
+  >
+    Book Now
+  </Button>
+</div>
+
   </div>
 </div>
     </div>
