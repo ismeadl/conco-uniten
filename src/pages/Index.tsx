@@ -83,7 +83,7 @@ useEffect(() => {
 useEffect(() => {
   const calculateSlotsLeft = () => {
     const targetTime = new Date("2025-11-28T23:59:59+08:00").getTime();
-    const startTime = new Date("2025-11-08T00:00:00+08:00").getTime(); // <-- adjust this to your actual start date
+    const startTime = new Date("2025-11-08T10:00:00+08:00").getTime(); // <-- adjust this to your actual start date
     const now = new Date().getTime();
 
     // 🚩 Add this guard so it doesn't drop before 8 Oct
