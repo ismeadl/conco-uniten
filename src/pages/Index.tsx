@@ -373,7 +373,7 @@ useEffect(() => {
       </Button>
 
       <Button
-        className="w-full bg-yellow-500 text-white hover:bg-yellow-600"
+        className="w-full bg-white text-black border hover:bg-muted"
         onClick={() => {
           window.open("https://fotoshare.co/e/hDi6G0sJWm400Xqrw1ZxT", "_blank");
         }}
