@@ -452,7 +452,7 @@ useEffect(() => {
   {/* View Album button */}
   <Button 
     onClick={() => setIsAlbumOpen(true)}
-    className="border border-gray-400 text-gray-800 bg-white hover:bg-gray-100"
+    className="bg-indigo-600 hover:bg-indigo-700 text-white"
   >
     View Album
   </Button>
