@@ -436,9 +436,9 @@ useEffect(() => {
       {/* Sticky Bottom Bar */}
 <div className="fixed bottom-0 left-0 right-0 bg-background border-t p-4 z-50">
   <div className="flex items-center justify-between max-w-4xl mx-auto gap-3">
-    <div className="text-sm">
+ {/*   <div className="text-sm">
       <span className="font-bold text-primary">{slotsLeft}</span> slots left
-    </div>
+    </div>*/}
     <div className="flex items-center gap-2">
   {/* WhatsApp button */}
   <Button 
