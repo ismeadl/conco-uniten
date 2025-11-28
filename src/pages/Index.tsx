@@ -366,7 +366,7 @@ useEffect(() => {
         className="w-full bg-white text-black border hover:bg-muted"
         variant="outline"
         onClick={() => {
-          window.open("https://fotoshare.co/e/AuYUjxylQo0-ce5ur7xVV", "_blank");
+          window.open("https://fotoshare.co/e/DA-RS-nRmZ7rhuqWYNuXn", "_blank");
         }}
       >
         📸 Polaroid (softcopies)
@@ -375,7 +375,7 @@ useEffect(() => {
       <Button
         className="w-full bg-white text-black border hover:bg-muted"
         onClick={() => {
-          window.open("https://fotoshare.co/e/hDi6G0sJWm400Xqrw1ZxT", "_blank");
+          window.open("https://fotoshare.co/e/PbhwA4g1x1jYsy4yCsHPn", "_blank");
         }}
       >
         📷 360 Video
