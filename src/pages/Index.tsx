@@ -170,10 +170,10 @@ useEffect(() => {
      Istiadat Konvokesyen Universiti Malaya Kali Ke-65
   </h1>
   <p className="text-lg text-muted-foreground font-medium">
-    📍 Main Marquee Tent (next to Dewan Tunku Canselor), UM (29-Nov – 10-Dec 2025)
+    📍 Main Marquee Tent (next to Dewan Tunku Canselor) 
   </p>
   <p className="text-sm text-destructive font-semibold">
-    🎟️ Book now and skip the queue!
+    🎟️ Book now and skip the queue! (29-Nov – 10-Dec 2025)
   </p>
             
             {/* Inline Countdown */}
