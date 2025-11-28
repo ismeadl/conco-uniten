@@ -128,7 +128,7 @@ useEffect(() => {
       id: 'combo',
       name: 'Combo Deal 🔥',
       description: '1x 360 video + 1x Photobooth (2 prints) + softcopies',
-      price: 30,
+      price: 40,
       video: '/combo.mp4' ,
       popular: true
     },
@@ -170,14 +170,14 @@ useEffect(() => {
      Istiadat Konvokesyen Universiti Malaya Kali Ke-65
   </h1>
   <p className="text-lg text-muted-foreground font-medium">
-    📍 Dewan Tunku Canselor, UM (29-Nov – 10-Dec 2025)
+    📍 Main Marquee Tent (next to Dewan Tunku Canselor), UM (29-Nov – 10-Dec 2025)
   </p>
   <p className="text-sm text-destructive font-semibold">
-    🎟️ Limited slots – only early bookers gets guaranteed spot!
+    🎟️ Book now and skip the queue!
   </p>
             
             {/* Inline Countdown */}
-            <div className="bg-red-50 border border-red-200 p-4 rounded-lg shadow-sm flex flex-wrap justify-center items-center gap-x-8 gap-y-2 mb-10 px-4 text-sm md:text-base">
+  {/*          <div className="bg-red-50 border border-red-200 p-4 rounded-lg shadow-sm flex flex-wrap justify-center items-center gap-x-8 gap-y-2 mb-10 px-4 text-sm md:text-base">
   <div className="flex items-center gap-2">
     <Timer className="h-4 w-4 text-red-600 animate-pulse" />
     <span className="text-red-600 font-semibold">Pre-booking closes in:</span>
@@ -191,7 +191,7 @@ useEffect(() => {
     <span className="text-red-600 font-bold">{slotsLeft}</span>
     <span className="text-sm text-muted-foreground">slots left</span>
   </div>
-</div>
+</div>*/}
 
           </div>
 
@@ -346,7 +346,7 @@ useEffect(() => {
         window.open("https://catalog.billplz.com/vision360/pf/um-combo", "_blank");
       }}
     >
-      Combo Deal 🔥 (RM30) 
+      Combo Deal 🔥 (RM40) 
     </Button>
   </div>
 </DialogContent>
